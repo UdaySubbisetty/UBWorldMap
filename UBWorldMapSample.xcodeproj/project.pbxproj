@@ -13,6 +13,10 @@
 		A5F04DBA1F53FB44004061D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F04DB81F53FB44004061D7 /* Main.storyboard */; };
 		A5F04DBC1F53FB44004061D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5F04DBB1F53FB44004061D7 /* Assets.xcassets */; };
 		A5F04DBF1F53FB44004061D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F04DBD1F53FB44004061D7 /* LaunchScreen.storyboard */; };
+		A5F04DDA1F53FD81004061D7 /* UBMapDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F04DD41F53FD81004061D7 /* UBMapDecode.m */; };
+		A5F04DDB1F53FD81004061D7 /* UBMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F04DD61F53FD81004061D7 /* UBMapView.m */; };
+		A5F04DDC1F53FD81004061D7 /* UBPath.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F04DD81F53FD81004061D7 /* UBPath.m */; };
+		A5F04DDD1F53FD81004061D7 /* world_map.svg in Resources */ = {isa = PBXBuildFile; fileRef = A5F04DD91F53FD81004061D7 /* world_map.svg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,13 @@
 		A5F04DBB1F53FB44004061D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5F04DBE1F53FB44004061D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5F04DC01F53FB44004061D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5F04DD31F53FD81004061D7 /* UBMapDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBMapDecode.h; sourceTree = "<group>"; };
+		A5F04DD41F53FD81004061D7 /* UBMapDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBMapDecode.m; sourceTree = "<group>"; };
+		A5F04DD51F53FD81004061D7 /* UBMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBMapView.h; sourceTree = "<group>"; };
+		A5F04DD61F53FD81004061D7 /* UBMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBMapView.m; sourceTree = "<group>"; };
+		A5F04DD71F53FD81004061D7 /* UBPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBPath.h; sourceTree = "<group>"; };
+		A5F04DD81F53FD81004061D7 /* UBPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBPath.m; sourceTree = "<group>"; };
+		A5F04DD91F53FD81004061D7 /* world_map.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = world_map.svg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +73,7 @@
 				A5F04DB31F53FB44004061D7 /* AppDelegate.m */,
 				A5F04DB51F53FB44004061D7 /* ViewController.h */,
 				A5F04DB61F53FB44004061D7 /* ViewController.m */,
+				A5F04DD21F53FD81004061D7 /* UBMap */,
 				A5F04DB81F53FB44004061D7 /* Main.storyboard */,
 				A5F04DBB1F53FB44004061D7 /* Assets.xcassets */,
 				A5F04DBD1F53FB44004061D7 /* LaunchScreen.storyboard */,
@@ -77,6 +89,20 @@
 				A5F04DB01F53FB44004061D7 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5F04DD21F53FD81004061D7 /* UBMap */ = {
+			isa = PBXGroup;
+			children = (
+				A5F04DD31F53FD81004061D7 /* UBMapDecode.h */,
+				A5F04DD41F53FD81004061D7 /* UBMapDecode.m */,
+				A5F04DD51F53FD81004061D7 /* UBMapView.h */,
+				A5F04DD61F53FD81004061D7 /* UBMapView.m */,
+				A5F04DD71F53FD81004061D7 /* UBPath.h */,
+				A5F04DD81F53FD81004061D7 /* UBPath.m */,
+				A5F04DD91F53FD81004061D7 /* world_map.svg */,
+			);
+			path = UBMap;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5F04DDD1F53FD81004061D7 /* world_map.svg in Resources */,
 				A5F04DBF1F53FB44004061D7 /* LaunchScreen.storyboard in Resources */,
 				A5F04DBC1F53FB44004061D7 /* Assets.xcassets in Resources */,
 				A5F04DBA1F53FB44004061D7 /* Main.storyboard in Resources */,
@@ -151,8 +178,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5F04DB71F53FB44004061D7 /* ViewController.m in Sources */,
+				A5F04DDA1F53FD81004061D7 /* UBMapDecode.m in Sources */,
 				A5F04DB41F53FB44004061D7 /* AppDelegate.m in Sources */,
+				A5F04DDB1F53FD81004061D7 /* UBMapView.m in Sources */,
 				A5F04DB11F53FB44004061D7 /* main.m in Sources */,
+				A5F04DDC1F53FD81004061D7 /* UBPath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
